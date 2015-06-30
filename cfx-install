@@ -1,0 +1,7 @@
+set -x
+
+cfx xpi
+
+curl --data-binary '@pbfx.xpi' -H 'Expect:' http://localhost:8888/
+
+set +x
