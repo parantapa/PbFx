@@ -1,0 +1,9 @@
+{
+  "name": "pbfx",
+  "title": "PbFx",
+  "id": "jid1-fB79UUPANCQ7Dg",
+  "description": "a basic add-on",
+  "author": "PB's Personal Firefox Addon",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
