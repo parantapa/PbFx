@@ -5,6 +5,9 @@ var prefs = require("sdk/preferences/service");
 var tabs = require("sdk/tabs");
 var { Cu } = require("chrome");
 
+var bookmark = require("./bookmark.js");
+// console.log(bookmark);
+
 var vimfx_url = prefs.get("extensions.VimFx.api_url", null);
 console.log("VimFx url:", vimfx_url);
 
@@ -21,8 +24,9 @@ Cu.import(vimfx_url, {}).getAPI(function (vimfx) {
     vimfx.set("mode.normal.tab_close", "d");
     vimfx.set("mode.normal.tab_restore", "D");
 
-    // Create the new commands
     let { commands } = vimfx.modes.normal
+
+    // Create the new commands
     vimfx.addCommand({
         name: 'tab_new_and_focus_search_bar',
         description: 'Open new tab and focus Search Bar',
@@ -32,6 +36,16 @@ Cu.import(vimfx_url, {}).getAPI(function (vimfx) {
         commands.focus_search_bar.run(args)
     });
     vimfx.set("custom.mode.normal.tab_new_and_focus_search_bar", "S");
+
+    // Add the bookmark command
+    vimfx.addCommand({
+        name: 'custom_bookmark',
+        description: 'Bookmark the current page.',
+        category: 'misc',
+    }, function (args) {
+        bookmark.bookmark();
+    });
+    vimfx.set("custom.mode.normal.custom_bookmark", ",a");
 
     var addQuickOpenCmd = function (name, desc, key, urls) {
         vimfx.addCommand({
