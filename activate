@@ -1,3 +1,0 @@
-pushd ~/workspace/addon-sdk-1.17
-source bin/activate
-popd

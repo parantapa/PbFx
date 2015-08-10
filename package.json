@@ -1,9 +1,13 @@
 {
-  "name": "pbfx",
   "title": "PbFx",
-  "id": "jid1-fB79UUPANCQ7Dg",
-  "description": "a basic add-on",
-  "author": "PB's Personal Firefox Addon",
-  "license": "MPL 2.0",
-  "version": "0.1"
+  "name": "pbfx",
+  "version": "0.0.1",
+  "description": "PB's personal firefox add-on",
+  "main": "index.js",
+  "author": "Parantapa Bhattacharya",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
 }
