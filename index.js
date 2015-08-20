@@ -70,7 +70,7 @@ Cu.import(vimfx_url, {}).getAPI(function (vimfx) {
     addQuickOpenCmd("open_gs", "Open Google Scholar", ",gs",
         ["google.com/scholar"]);
     addQuickOpenCmd("open_news", "Open News Sites", ",n",
-        ["slashdot.org", "news.ycombinator.com", "telegraphindia.com"]);
+        ["news.ycombinator.com", "google.com/news"]);
     addQuickOpenCmd("open_social", "Open Social Network Sites", ",s",
         ["facebook.com", "twitter.com", "reddit.com"]);
     addQuickOpenCmd("open_blogs", "Open Blogs", ",b",
