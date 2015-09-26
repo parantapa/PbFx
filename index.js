@@ -76,7 +76,10 @@ Cu.import(vimfx_url, {}).getAPI(function (vimfx) {
     addQuickOpenCmd("open_blogs", "Open Blogs", ",b",
         ["lifehacker.com", "boingboing.net"]);
     addQuickOpenCmd("open_comics_a", "Open Comics", ",c1",
-        ["dilbert.com", "xkcd.com", "phdcomics.com/comics.php"]);
+        ["dilbert.com",
+         "xkcd.com",
+         "phdcomics.com/comics.php",
+         "www.commitstrip.com/en/"]);
     addQuickOpenCmd("open_comics_b", "Open Comics", ",c2",
         ["gocomics.com/calvinandhobbes",
          "gocomics.com/garfield",
