@@ -75,6 +75,8 @@ Cu.import(vimfx_url, {}).getAPI(function (vimfx) {
         ["facebook.com", "twitter.com", "reddit.com"]);
     addQuickOpenCmd("open_blogs", "Open Blogs", ",b",
         ["lifehacker.com", "boingboing.net"]);
+    addQuickOpenCmd("open_chesstactics", "Open Chesstactics.org", ",ch",
+        ["www.chesstactics.org"]);
     addQuickOpenCmd("open_comics_a", "Open Comics", ",c1",
         ["dilbert.com",
          "xkcd.com",
